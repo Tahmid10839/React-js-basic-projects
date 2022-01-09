@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(207, 245, 245);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.underline {
+  width: 100px;
+  height: 5px;
+  background-color: purple;
+  margin: 5px auto;
+  border-radius: 10px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+}
+.menu-item {
+  width: 50%;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  margin: 1rem 0;
+  padding: 1rem;
+}
+img {
+  width: 40%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+.item-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.price {
+  color: purple;
+}
+hr {
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  color: purple;
+}
+
+@media screen and (max-width: 1300px) {
+  .menu-container {
+    padding: 1rem;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  img {
+    width: 45%;
+    height: 250px;
+  }
+  .item-info {
+    width: 55%;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .menu-item {
+    width: 100%;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+    height: 300px;
+  }
+  .item-info {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.btn {
+  background-color: transparent;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: purple;
+  text-transform: capitalize;
+  margin: 0 2px;
+}
+
+.btn:hover,
+.active {
+  background-color: purple;
+  color: white;
+}
